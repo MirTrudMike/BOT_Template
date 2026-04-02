@@ -21,7 +21,7 @@ Production-ready [aiogram 3](https://docs.aiogram.dev/) bot skeleton with role-b
 
 ## Tech Stack
 
-- Python 3.11+
+- Python 3.11–3.13
 - [aiogram 3.15](https://github.com/aiogram/aiogram) — async Telegram framework
 - [asyncpg](https://github.com/MagicStack/asyncpg) — PostgreSQL driver
 - [Redis](https://redis.io/) — FSM state storage
@@ -125,7 +125,7 @@ BOT_Template/
 
 ## Prerequisites
 
-- Python 3.11+
+- Python 3.11–3.13 (**not** 3.14+ — dependencies not yet compatible)
 - PostgreSQL 14+
 - Redis 6+
 - A Telegram bot token from [@BotFather](https://t.me/BotFather)
@@ -151,9 +151,16 @@ cd my-new-bot
 make install        # creates venv/ and installs requirements.txt
 ```
 
+> **Note:** if your default `python3` is 3.14+, specify a compatible interpreter:
+> ```bash
+> make install PYTHON3=python3.12
+> # or install it first: sudo dnf install python3.12   (Fedora)
+> #                       sudo apt install python3.12   (Debian/Ubuntu)
+> ```
+
 Or manually:
 ```bash
-python3 -m venv venv
+python3.12 -m venv venv
 source venv/bin/activate
 pip install -r requirements.txt
 ```

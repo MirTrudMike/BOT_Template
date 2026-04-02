@@ -1,0 +1,39 @@
+# Environment
+.env
+
+# Virtual environment
+venv/
+.venv/
+env/
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.egg-info/
+dist/
+build/
+.eggs/
+
+# Logs (auto-created at runtime)
+logging/*.log
+logging/*.log.*
+
+# Local JSON storage (runtime state, not source)
+storage/*.json
+
+# IDE
+.claude
+.idea/
+.vscode/
+*.iml
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Tests
+.pytest_cache/
+.coverage
+htmlcov/

@@ -1,0 +1,24 @@
+# Core bot framework
+aiogram==3.15.0
+
+# Async PostgreSQL driver
+asyncpg==0.30.0
+
+# FSM storage backend (Redis)
+redis==5.2.1
+
+# Scheduler for cron jobs
+apscheduler==3.11.0
+
+# Environment variable loading
+environs==14.1.1
+
+# Structured logging
+loguru==0.7.3
+
+# Calendar widget (optional — remove if not used)
+# aiogram-calendar is not on PyPI; install from GitHub if needed:
+# aiogram_calendar @ git+https://github.com/...
+
+# TODO: project-specific — add project dependencies below
+# e.g. gspread, google-auth, aiohttp, Pillow, etc.

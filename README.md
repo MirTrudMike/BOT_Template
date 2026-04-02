@@ -151,11 +151,11 @@ cd my-new-bot
 make install        # creates venv/ and installs requirements.txt
 ```
 
-> **Note:** if your default `python3` is 3.14+, specify a compatible interpreter:
+> **Note:** `make install` auto-selects the first compatible Python (3.12 → 3.13 → 3.11).
+> If none is found, install one first:
 > ```bash
-> make install PYTHON3=python3.12
-> # or install it first: sudo dnf install python3.12   (Fedora)
-> #                       sudo apt install python3.12   (Debian/Ubuntu)
+> sudo dnf install python3.12   # Fedora
+> sudo apt install python3.12   # Debian/Ubuntu
 > ```
 
 Or manually:
